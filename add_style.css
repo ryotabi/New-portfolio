@@ -1,0 +1,268 @@
+
+
+/* firstview */
+
+.fv-wrap{
+    position: relative;
+    height: 540px;
+}
+
+.firstview{
+    position: absolute;
+    width: 100%;
+}
+#fv-img1, #fv-img2, #fv-img3{
+    opacity: 0;
+    transition: all ease-in-out 3s;
+}
+
+#fv-img1.active, #fv-img2.active, #fv-img3.active{
+    opacity: 1;
+    transition: all ease-in-out 3s;
+}
+
+@media (max-width: 767px){
+.adam-main-slider-area {
+     padding: 180px 0 !important; 
+}
+}
+
+/* about */
+
+#about{
+    margin-top: 50px;
+}
+
+.history-btn{
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.history-wrap{
+    display: none;
+    padding: 30px;
+    background-color: rgba(231, 229, 229, 0.719);
+}
+
+.block-text li{
+    font-size: 16px !important;
+}
+
+
+
+
+
+
+/* skills */
+#skills{
+    background-color: rgba(238, 238, 238,0.5);
+}
+#skills .col-md-6{
+    padding-left: 0;
+    padding-right: 0;
+}
+.works-img1{
+    width: 100%;
+    height: 300px;
+    background-image: url("img/ryota/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg");
+    background-size: cover;
+    background-position: -17px 0;
+}
+
+.works-img2{
+    width: 100%;
+    height: 300px;
+    background-image: url("img/ryota/notebook-beside-the-iphone-on-table-196644.jpg");
+    background-size: cover;
+
+}
+
+
+/* .works-img3{
+    width: 100%;
+    height: 500px;
+    background-color: pink;
+} */
+
+.skills-text-wrap{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.coding-text,.design-text{
+    margin-top: 45px;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 16px !important;
+}
+
+.coding-tool,.design-tool{
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 16px !important;
+}
+
+@media (max-width: 991px){
+    .coding-text, .design-text, .coding-tool,.design-tool{
+        margin-left: 0;
+    }
+
+    .coding-tool,.design-tool{
+        margin-bottom: 30px;
+    }
+    }
+
+@media (max-width: 375px){
+    .skills-text-wrap{
+        text-align: left;
+    }
+
+    .coding-wrap-sp{
+        margin-bottom: 50px;
+    }
+}
+
+
+
+/* works */
+.works-img{
+    margin-top: 50px;
+}
+
+.link-design{
+    width: 61% !important;
+}
+
+.link-wrap{
+    text-align: left;
+    width: 68%;
+    margin: 30px auto;
+}
+
+@media (max-width: 375px){
+    .works-img{
+        width: 100%;
+    }
+}
+
+
+
+
+/* comment */
+
+#comment .container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.comment-wrap{
+    width: 100%;
+    height: 300px;
+    background-image: url("img/ryota/IMG_6954.JPG");
+    background-size: cover;
+    background-position: 0 5%;
+    text-align: center;
+    line-height: 380px;
+}
+
+.comment-btn{
+    width: 50%;
+}
+
+/* modal-design */
+
+.modal, .modal-dailyui-day1,.modal-dailyui-day2{
+    display: none;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.modal-open,.modal-open_dailyui-day1,.modal-open_dailyui-day2{
+    cursor: pointer;
+}
+
+.modal-dailyui-day1,.modal-dailyui-day2{
+    transform: translateX(-54%);
+    width: 101% !important;
+}
+
+.modal-bg{
+    background-color: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.modal-wrap{
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    padding: 40px;
+    width: 60%;
+    position: absolute;
+}
+
+
+/* 閉じるボタン */
+
+.close {
+	font-size: 18px;
+    position: absolute;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #000;
+    border-radius: 100%;
+}
+/* 左 */
+.close::before {
+	position: absolute;
+	top: 0.2em;
+	left: 0.6em;
+	width: 0.2em;
+	height: 1em;
+	content: "";
+	background-color: #000;
+	transform: rotate(45deg);
+}
+/* 右 */
+.close::after {
+	position: absolute;
+	top: 0.6em;
+	left: 0.2em;
+	width: 1em;
+	height: 0.2em;
+	content: "";
+	background-color: #000;
+	transform: rotate(225deg);
+}
+
+/* footer */
+
+.fa-twitter:hover,.fa-instagram:hover,.fa-facebook:hover,.fa-envelope:hover {
+    transform: rotate(30deg);
+  }
+
+
+
+
+  .sp-blank{
+      display: none;
+  }
+
+  @media (max-width: 375px){
+    .sp-blank{
+        display: block;
+    }
+}
+
+
